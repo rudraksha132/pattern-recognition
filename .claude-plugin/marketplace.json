@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pattern-recognition",
+  "description": "Structured analytical protocol for Claude Code. Replaces the first plausible explanation with anomaly-first observation, invariance analysis, and a falsifiable Pattern Report.",
+  "owner": {
+    "name": "rudraksha132",
+    "url": "https://github.com/rudraksha132"
+  },
+  "plugins": [
+    {
+      "name": "pattern-recognition",
+      "description": "Make every answer provable, not just plausible. Anomaly-first, invariance-driven analysis ending in a falsifiable Pattern Report.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
