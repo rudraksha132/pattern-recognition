@@ -2,8 +2,6 @@
 
 ![Pattern Recognition](assets/banner.svg)
 
-# 🧠 Pattern Recognition
-
 **Pattern Recognition helps you catch what everyone else missed.**
 
 A Skill that structures analysis around the observation and reasoning methods historically associated with rigorous scientific discovery: first-principles decomposition, invariance analysis, cross-domain analogy, and falsifiable reporting.
