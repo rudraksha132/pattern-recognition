@@ -21,8 +21,8 @@
 </feMerge>
 </filter>
 <linearGradient id="paint0_linear_2001_7" x1="600" y1="360" x2="600" y2="5.96047e-06" gradientUnits="userSpaceOnUse">
-<stop stop-color="#1C1C1C"/>
-<stop offset="1" stop-color="#262626"/>
+<stop stop-color="#111111"/>
+<stop offset="1" stop-color="#1A1A1A"/>
 </linearGradient>
 </defs>
 </svg>
