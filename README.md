@@ -2,7 +2,7 @@
 
 # 🧠 Pattern Recognition
 
-**Structured, falsifiable analysis — for any coding assistant.**
+**Pattern Recognition helps you catch what everyone else missed.**
 
 A Skill that structures analysis around the observation and reasoning methods historically associated with rigorous scientific discovery: first-principles decomposition, invariance analysis, cross-domain analogy, and falsifiable reporting.
 
