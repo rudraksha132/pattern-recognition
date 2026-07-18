@@ -10,9 +10,42 @@ A Skill that structures analysis around the observation and reasoning methods hi
 [![40+ agents](https://img.shields.io/badge/works%20with-40%2B_agents-blue?style=flat)](https://github.com/vercel-labs/skills)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat)]()
 
-[Overview](#overview) · [Install](#installation) · [Methodology](#core-methodology) · [Usage](#usage) · [Structure](#package-structure) · [Versioning](#versioning)
+[See it](#see-it) · [Overview](#overview) · [Install](#installation) · [Methodology](#core-methodology) · [Usage](#usage) · [Structure](#package-structure) · [Versioning](#versioning)
 
 </div>
+
+---
+
+## See it
+
+Most assistants answer a "why does this keep happening" question with a list of plausible causes. This skill produces a different kind of artifact: a **Pattern Report** — a claim structured so it can be checked, not just believed.
+
+**Prompt:** *"Why do so many fast-growing startups fail shortly after their first big growth spurt?"*
+
+<table>
+<tr><td>
+
+**PATTERN REPORT**
+
+**Name:** Cost–revenue elasticity mismatch
+
+**Observed in:** Startup post-growth-spurt failures, colony collapse after resource booms, structural failure under sudden load
+
+**Invariant core:** Operating cost scales with headcount and commitments; revenue scales with a channel that is close to saturation. The two curves diverge at the same point almost every time — not at the growth spurt itself, but roughly two quarters after it.
+
+**Generator rule:** When a system's cost structure scales with a *lagging* variable (hiring) and its output scales with a *saturating* one (a single channel), collapse is a timing problem, not a talent problem.
+
+**Prediction:** Startups that survive a growth spurt will show cost commitments deliberately held below the confirmed (not projected) revenue curve for at least one full cycle after the spurt.
+
+**Falsification conditions:** A startup where costs scaled *faster* than revenue during the spurt and it still survived without a correction. That would mean the mechanism above isn't the operative one.
+
+**Open questions:** Does the same lag hold in capital-light businesses, where headcount isn't the dominant cost driver?
+
+</td></tr>
+</table>
+
+> [!TIP]
+> This is the standard shape of every finding the skill produces — not a special demo. Ask it to analyze a real situation and expect the same structure: a name, an invariant, a generator rule, a prediction, and — critically — a way to prove it wrong.
 
 ---
 
@@ -82,6 +115,9 @@ npx skills list
 ```
 `pattern-recognition` should appear with its install location and target agent(s).
 
+> [!TIP]
+> **Turn it on:** ask a pattern-shaped question directly — *"why does this keep happening,"* *"what's the underlying pattern here."* No slash command needed; the agent matches your prompt against the skill's description and activates it on its own. To force it on an unrelated-sounding question, say so explicitly: *"use the pattern-recognition skill to look at…"*
+
 ---
 
 ## Core methodology
@@ -96,6 +132,9 @@ The skill discourages several default reasoning shortcuts and replaces them with
 | Thought experiments | Hypotheses are extended to their limiting cases before being accepted. |
 | Compression as a validity check | An explanation that cannot be stated concisely is treated as incomplete. |
 | Structured reporting | Every finding is reported in a standard format that includes the conditions under which it would be falsified, and the questions it leaves open. |
+
+> [!IMPORTANT]
+> **Honest scope note.** A Pattern Report is a structured hypothesis, not a verified result. The "falsification conditions" are proposed by the model, not tested against real data — they tell you what evidence *would* disprove the claim, not that the claim has already survived scrutiny. Treat the output as a rigorously shaped starting point for investigation, not a citation.
 
 ---
 
@@ -119,6 +158,9 @@ launches stalled at the same stage.
 ```
 
 The assistant moves through an observation → anomaly identification → invariance analysis → hypothesis testing pipeline, concluding with a structured Pattern Report: name, invariant core, generator rule, prediction, falsification conditions, and open questions.
+
+> [!NOTE]
+> This is a depth trade, not a free upgrade. The protocol asks the assistant to work through several explicit stages before answering, which means longer, more deliberate responses than a direct question would normally get. Reach for it when the question warrants that depth — not for quick factual lookups.
 
 ---
 
@@ -170,6 +212,9 @@ npx skills remove pattern-recognition                     # uninstall
 ```
 
 Installing from `main` tracks the latest changes.
+
+> [!TIP]
+> **Install not showing up?** Open your agent in this repo and ask it directly: *"Read SKILL.md and README.md, then install pattern-recognition for yourself."* Most agents can read their own install path from the files in this repo and self-correct.
 
 ---
 
