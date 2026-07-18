@@ -1,12 +1,18 @@
-# 🧠 Pattern Recognition 
+<div align="center">
 
-A Skill that structures analysis around the observation and reasoning methods historically associated with rigorous scientific discovery — first-principles decomposition, invariance analysis, cross-domain analogy, and falsifiable reporting.
+# 🧠 Pattern Recognition
+
+**Structured, falsifiable analysis — for any coding assistant.**
+
+A Skill that structures analysis around the observation and reasoning methods historically associated with rigorous scientific discovery: first-principles decomposition, invariance analysis, cross-domain analogy, and falsifiable reporting.
 
 [![Skill](https://img.shields.io/badge/format-Agent%20Skill-D97757?style=flat)](https://github.com/anthropics/skills)
 [![40+ agents](https://img.shields.io/badge/works%20with-40%2B_agents-blue?style=flat)](https://github.com/vercel-labs/skills)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat)]()
 
 [Overview](#overview) · [Install](#installation) · [Methodology](#core-methodology) · [Usage](#usage) · [Structure](#package-structure) · [Versioning](#versioning)
+
+</div>
 
 ---
 
