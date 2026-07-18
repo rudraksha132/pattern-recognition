@@ -3,7 +3,7 @@
   "name": "pattern-recognition",
   "description": "Structured analytical protocol for Claude Code. Replaces the first plausible explanation with anomaly-first observation, invariance analysis, and a falsifiable Pattern Report.",
   "owner": {
-    "name": "rudraksha132",
+    "name": "rudraksha",
     "url": "https://github.com/rudraksha132"
   },
   "plugins": [
