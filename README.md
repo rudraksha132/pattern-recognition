@@ -1,6 +1,8 @@
 <div align="center">
 
-![Pattern Recognition](assets/banner.svg)
+<p align="center">
+  <img src="assets/banner.svg" alt="Pattern Recognition" width="720">
+</p>
 
 **Pattern Recognition helps you catch what everyone else missed.**
 
