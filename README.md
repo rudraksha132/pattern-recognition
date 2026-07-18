@@ -1,6 +1,6 @@
 <div align="center">
 
-[![](https://raw.githubusercontent.com/rudraksha132/pattern-recognition/38c16faca7199395679730c7cec0a504a5b17b0e/assets/banner.svg?token=BBYBJK542J375T7OBDGAVUTKLNVL)]()
+![Pattern Recognition](assets/banner.svg)
 
 # 🧠 Pattern Recognition
 
