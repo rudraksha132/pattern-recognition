@@ -92,8 +92,9 @@ npx skills add rudraksha132/pattern-recognition --list
 **Claude Code — plugin marketplace**
 ```bash
 /plugin marketplace add rudraksha132/pattern-recognition
-/plugin install pattern-recognition
+/plugin install pattern-recognition@pattern-recognition
 ```
+Backed by `.claude-plugin/marketplace.json` (what this repo offers) and `.claude-plugin/plugin.json` (this plugin's own manifest) — both included at the repository root, no separate setup needed.
 
 **Claude.ai / Claude apps (Pro, Max, Team, Enterprise)**
 1. Download this repository, or clone it locally.
